@@ -1,0 +1,10 @@
+Adding the need files to package.json manifest file
+Basic Errors that will appear when you run nodejs for the first time will be starting the script
+So TO DO that we have to specify the start script in Node execution
+ that is In package.json file in script call 
+ In what ever file.js to be replace as in the start field start
+
+    "scripts": {
+        "start": "node simpleserver.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }  

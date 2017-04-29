@@ -1,0 +1,24 @@
+{
+  "name": "simpleserver",
+  "version": "1.0.0",
+  "description": "A simple Implementation of a Web server",
+  "main": "simpleserver.js",
+  "scripts": {
+    "start": "node simpleserver.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MurshidMac/Node.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript"
+  ],
+  "author": "MurshidHassen",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/MurshidMac/Node/issues"
+  },
+  "homepage": "https://github.com/MurshidMac/Node#readme"
+}
