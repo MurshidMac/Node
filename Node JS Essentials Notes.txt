@@ -1,7 +1,19 @@
 Node JS Essentials
 
 Features of NodeJs as expected
+++++++++++++++++++++++++++++++
 Event Driven
 Asynchronous
 Non-blocking IO Model
+
+==============================
+Event-Loops as stated
+Streams 
+File System
+Http Requests
+Express JS
+Mocha and Chaa
+Grunt and Npm Scripts
+
+
 
