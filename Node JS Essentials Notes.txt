@@ -1,0 +1,7 @@
+Node JS Essentials
+
+Features of NodeJs as expected
+Event Driven
+Asynchronous
+Non-blocking IO Model
+
