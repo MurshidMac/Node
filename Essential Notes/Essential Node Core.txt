@@ -1,0 +1,5 @@
+In javascript
+==============
+As we know the window is our global object.
+In node JS the global object is global (Namespace)
+
