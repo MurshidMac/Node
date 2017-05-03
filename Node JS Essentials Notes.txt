@@ -27,9 +27,13 @@ that it is multithreaded
 Node is single Threaded Applications
 So it has the freedom to work (Multitask)
 with the same thread for multiple requests
+Apache has something callled Blocking that
+prevents from other requests been formed
 =============================
 That is how the datastore or the file System works
 Thus the nodejs is simple single threaded
+Node JS is Asynchronous and non-blocking event driven io
+Event are store and recorded in a queue.And raised in that order
 
 
 
