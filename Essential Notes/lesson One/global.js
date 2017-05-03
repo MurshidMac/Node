@@ -9,4 +9,4 @@ console.log(murshidvalue);			// this is not in the global scope
 var murshidInitial="Musadique Hassen";		// Adding a template string 
 						// Since Node jS supports ES6
 var mynamewithInitails=murshidInitial.slice(9);	//
-console.log(mynamewithInitails);
+console.log(mynamewithInitails);		// this is one way call	
