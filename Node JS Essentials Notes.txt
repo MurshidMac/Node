@@ -8,12 +8,28 @@ Non-blocking IO Model
 
 ==============================
 Event-Loops as stated
+Single threaded Applications
+Node Core
 Streams 
 File System
-Http Requests
+Http Module Requests
 Express JS
 Mocha and Chaa
 Grunt and Npm Scripts
+
+=============================
+IO JS for more Infor
+
+Differences of Apache and Nodejs
+=============================
+Clear differences with Apache is
+that it is multithreaded
+Node is single Threaded Applications
+So it has the freedom to work (Multitask)
+with the same thread for multiple requests
+=============================
+That is how the datastore or the file System works
+Thus the nodejs is simple single threaded
 
 
 
