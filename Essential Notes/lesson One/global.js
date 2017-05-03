@@ -6,3 +6,7 @@ console.log(global.murshidvalue);		// we will get something like undefined
 						// Be cause nodejs works something different to when it stores global variables 
 console.log(murshidvalue);			// this is not in the global scope
 						// Now we can see that it prints the string in the value
+var murshidInitial="Musadique Hassen";		// Adding a template string 
+						// Since Node jS supports ES6
+var mynamewithInitails=murshidInitial.slice(9);	//
+console.log(mynamewithInitails);
