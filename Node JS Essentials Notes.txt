@@ -35,5 +35,5 @@ Thus the nodejs is simple single threaded
 Node JS is Asynchronous and non-blocking event driven io
 Event are store and recorded in a queue.And raised in that order
 
-
+Stopped @ lesson 4
 

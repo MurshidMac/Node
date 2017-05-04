@@ -10,3 +10,4 @@ var murshidInitial="Musadique Hassen";		// Adding a template string
 						// Since Node jS supports ES6
 var mynamewithInitails=murshidInitial.slice(9);	//
 console.log(mynamewithInitails);		// this is one way call	
+console.log(`${mynamewithInitails}`+"this is as same as the jquery call");	// this is a call
