@@ -11,3 +11,5 @@ var murshidInitial="Musadique Hassen";		// Adding a template string
 var mynamewithInitails=murshidInitial.slice(9);	//
 console.log(mynamewithInitails);		// this is one way call	
 console.log(`${mynamewithInitails}`+"this is as same as the jquery call");	// this is a call
+console.log(__dirname);		// this gives us the module directory
+console.log();
