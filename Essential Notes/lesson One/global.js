@@ -4,6 +4,7 @@
  * Meaning while you node the command 
  * 		{ node global.js or node global } 
  * Are the same in any condition. Nodejs assumes that the file ran is a js extension
+ * For more on global object visit ${ https://nodejs.org/api/globals.html }
  */
 
 var path = require("path");				// require function is also available globally
