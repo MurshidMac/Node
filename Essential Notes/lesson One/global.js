@@ -1,3 +1,5 @@
+var path = require("path");				// require function is also available globally
+										// this is to get the global path name of the current file only
 console.log("Murshid Hassen");			// To run the file node global.js
 global.console.log("this is a global object");	//console object is available as a global object(Name space), this will work
 						// both are the same in sense
@@ -13,3 +15,4 @@ console.log(mynamewithInitails);		// this is one way call
 console.log(`${mynamewithInitails}`+"this is as same as the jquery call");	// this is a call
 console.log(__dirname);		// this gives us the module directory
 console.log(__filename);	// this gives us the full path directory and the filename 	 
+console.log("Path name of the file only:  "+ `${path.basename(__filename)}`);				// this get the global path name only and this will retun only the path name
