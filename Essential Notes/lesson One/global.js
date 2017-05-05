@@ -10,9 +10,9 @@ console.log(murshidvalue);			// this is not in the global scope
 						// Now we can see that it prints the string in the value
 var murshidInitial="Musadique Hassen";		// Adding a template string 
 						// Since Node jS supports ES6
-var mynamewithInitails=murshidInitial.slice(9);	//
+var mynamewithInitails=murshidInitial.slice(9);		//picking the exact charactors from a string
 console.log(mynamewithInitails);		// this is one way call	
 console.log(`${mynamewithInitails}`+"this is as same as the jquery call");	// this is a call
 console.log(__dirname);		// this gives us the module directory
 console.log(__filename);	// this gives us the full path directory and the filename 	 
-console.log("Path name of the file only:  "+ `${path.basename(__filename)}`);				// this get the global path name only and this will retun only the path name
+console.log("Path name of the file only:  "+ `${path.basename(__filename)}`);	// this get the global path name only and this will retun only the path name
