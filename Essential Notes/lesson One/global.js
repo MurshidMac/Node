@@ -1,3 +1,11 @@
+/**
+ * Some important stuff while running a node command in the terminal is that 
+ * We don't necessariliy include the ".js" extension
+ * Meaning while you node the command 
+ * 		{ node global.js or node global } 
+ * Are the same in any condition. Nodejs assumes that the file ran is a js extension
+ */
+
 var path = require("path");				// require function is also available globally
 										// this is to get the global path name of the current file only
 console.log("Murshid Hassen");			// To run the file node global.js
@@ -16,3 +24,5 @@ console.log(`${mynamewithInitails}`+"this is as same as the jquery call");	// th
 console.log(__dirname);		// this gives us the module directory
 console.log(__filename);	// this gives us the full path directory and the filename 	 
 console.log("Path name of the file only:  "+ `${path.basename(__filename)}`);	// this get the global path name only and this will retun only the path name
+
+							
