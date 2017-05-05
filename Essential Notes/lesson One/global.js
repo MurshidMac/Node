@@ -5,6 +5,8 @@
  * 		{ node global.js or node global } 
  * Are the same in any condition. Nodejs assumes that the file ran is a js extension
  * For more on global object visit ${ https://nodejs.org/api/globals.html }
+ * For more on Path Object visit $ { https://nodejs.org/api/path.html }
+ * Path varies according to POSIX in UNIX or Windows Systems
  */
 
 var path = require("path");				// require function is also available globally
@@ -25,5 +27,5 @@ console.log(`${mynamewithInitails}`+"this is as same as the jquery call");	// th
 console.log(__dirname);		// this gives us the module directory
 console.log(__filename);	// this gives us the full path directory and the filename 	 
 console.log("Path name of the file only:  "+ `${path.basename(__filename)}`);	// this get the global path name only and this will retun only the path name
-
+console.log(path.dirname(__filename));	// 
 							
