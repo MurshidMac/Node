@@ -12,4 +12,4 @@ var mynamewithInitails=murshidInitial.slice(9);	//
 console.log(mynamewithInitails);		// this is one way call	
 console.log(`${mynamewithInitails}`+"this is as same as the jquery call");	// this is a call
 console.log(__dirname);		// this gives us the module directory
-console.log();
+console.log(__filename);	// this gives us the full path directory and the filename 	 
