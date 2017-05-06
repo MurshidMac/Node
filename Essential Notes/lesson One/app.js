@@ -5,13 +5,14 @@ console.log(process.argv);          // Process Variable is store for any app wit
                                     // Ex node app.js --name MurshidHassen --age 18
 
 // Here comes the magic of functional programming
+// One Important Note always remember to Use Single Quotation Marks (No Double Quotations)
 function grab(flag){                                            // this will take a greeting as a flag
     var index= process.argv.indexOf(flag);                      // here we are getting the index of the flag 
     return (index === -1) ? null : process.argv[index+1];       // we are checking weather the index equalls to negative else we are returning the     
 }
-var greeting =grab("Murshid Hassen");                           // here I am passing the value
-//console.log(variable);                                          // this should return us the index of the process function
-var invitation= grab("Wel Come  "+ `${greeting}`);
+var greeting =grab('--user');                                   // here I am passing the value
+//console.log(variable);                                        // this should return us the index of the process function
+var invitation= grab('--greeting');                 
 
 if(!greeting||!invitation){
     console.log("the Process.argv is empty")
