@@ -9,5 +9,14 @@ function grab(flag){                                            // this will tak
     var index= process.argv.indexOf(flag);                      // here we are getting the index of the flag 
     return (index === -1) ? null : process.argv[index+1];       // we are checking weather the index equalls to negative else we are returning the     
 }
-var variable =grab("Murshid Hassen");                           // here I am passing the value
-console.log(variable);                                          // this should return us the index of the process function
+var greeting =grab("Murshid Hassen");                           // here I am passing the value
+//console.log(variable);                                          // this should return us the index of the process function
+var invitation= grab("Wel Come  "+ `${greeting}`);
+
+if(!greeting||!invitation){
+    console.log("the Process.argv is empty")
+}else {
+    console.log(`Hurray first of your functional programm is superb  ${greeting }  ${invitation}`)
+}
+
+
