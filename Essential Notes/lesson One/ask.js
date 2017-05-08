@@ -16,16 +16,32 @@ var questions = [
 
 var answers=[];
 //()=> this means an annonymous funtion that returns the value in the object
-
 function question(i){
     process.stdout.write(`Question : ${questions[i]}`);
-    process.stdout.write("  >   ")
+    process.stdout.write("  >   ");
+    //if(i===questions.length){
+      //  break;
+   // }
 }
 
-question(1);
+question(0);
+// adding the listener or getting the realtime input from the terminal as 
+// callback functions
+// this is first Asynchronous Call from the node JS
+/*
+process.stdin.on('data',function(data){
+    return process.stdout.write('Your answer '+ data.toString().trim()+ '\n');    // this line echos the Answer
+});
+*/
 
-
-
+process.stdin.on('data',function (data){
+    answers.push(data.toString().trim());              // we push the value to code
+    if(answers.length<questions.length){               // this checks for remaining question in the array
+        question(answers.length);                
+    }else{
+        process.exit();
+    }
+});
 
 
 
