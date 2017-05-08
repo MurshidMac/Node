@@ -42,6 +42,12 @@ process.stdin.on('data',function (data){
         process.exit();
     }
 });
+// adding a exit event in the process object
+process.on('exit',function (){
+    process.stdout.write("\n\n\n");
+    process.stdout.write(answers[1],answers[2], answers[0]);
+    process.stdout.write("\n\n\n");
+});
 
 
 
