@@ -1,0 +1,1 @@
+// standerd Inputs for JS file
