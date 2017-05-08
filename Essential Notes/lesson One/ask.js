@@ -18,21 +18,43 @@ var answers=[];
 //()=> this means an annonymous funtion that returns the value in the object
 
 function question(i){
-    return ()=>{
-        process.stdout.write(`\n\n ${i}`);
-        process.stdout.write("Done next question\n");
-    }
+    process.stdout.write(`Question : ${questions[i]}`);
+    process.stdout.write("  >   ")
 }
 
+question(1);
+
+
+
+
+
+
+
+
+
+
+/*
+function questionAnnoynm(i){
+    return ()=>{
+        process.stdout.write(`\n\n ${questions[i]}`);
+        process.stdout.write("Done next question\n\n");
+    }
+}
+questionAnnoynm(1);
+*/
 /**
  * simillary some more code that uses without loops
- */
+ 
  var askquestion= questions.filter(function (question){
     return question.length>1;
  });
-askquestion;
 
+question(1);
 
+function question(i){
+    process.stdout.write(`${i}`)
+}
+*/
 
 // this should return the values in the array
 /*
