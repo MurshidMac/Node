@@ -4,7 +4,7 @@
 
 var waitTime= 3000;     // 3 seconds long
 var currentTime=0;
-var waitInterval=500;
+var waitInterval=100;    // initially at 500    
 var percentWait=0;
 
 
