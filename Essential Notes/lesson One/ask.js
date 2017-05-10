@@ -33,7 +33,7 @@ process.stdin.on('data',function(data){
     return process.stdout.write('Your answer '+ data.toString().trim()+ '\n');    // this line echos the Answer
 });
 */
-
+// this is listner to invoke an input to the function
 process.stdin.on('data',function (data){
     answers.push(data.toString().trim());              // we push the value to code
     if(answers.length<questions.length){               // this checks for remaining question in the array
@@ -42,7 +42,7 @@ process.stdin.on('data',function (data){
         process.exit();
     }
 });
-// adding a exit event in the process object
+// adding a exit event in the process object is on function
 process.on('exit', function (){
     process.stdout.write("\n\n\n");         // padding for the objects
     process.stdout.write(`Go ${answers[0]} ${answers[1]}  ${answers[2]}`);
