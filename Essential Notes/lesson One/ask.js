@@ -4,7 +4,7 @@
 //console.log("") // this is the standard output object of the JS
 process.stdout.write("My Name is Murshid \n");  // this is the standard output Object of the Terminal
 process.stdout.write("Murshid \n \nlest \n");    // this won't give us a new line charactor   
-process.stdout.write("=====================")
+process.stdout.write("=====================");
 
 // Here Comes the interesting Stuffs, Playing with Arrays
 
@@ -43,12 +43,19 @@ process.stdin.on('data',function (data){
     }
 });
 // adding a exit event in the process object
-process.on('exit',function (){
+process.on('exit', function (){
+    process.stdout.write("\n\n\n");         // padding for the objects
+    process.stdout.write(`Go ${answers[0]} ${answers[1]}  ${answers[2]}`);
+    process.stdout.write("\n\n\n");         // padding for the objects
+});
+
+/*
+process.on('exit',function () {
     process.stdout.write("\n\n\n");
     process.stdout.write(answers[1],answers[2], answers[0]);
     process.stdout.write("\n\n\n");
 });
-
+*/
 
 
 
