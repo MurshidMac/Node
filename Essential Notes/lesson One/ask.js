@@ -1,7 +1,9 @@
 // standerd Inputs for JS file
 // Using the process fucntion
 // We can use the process.argv indexOf function to get the index with a special flag
-//console.log("") // this is the standard output object of the JS
+// console.log("") // this is the standard output object of the JS
+// To get to know more on the proess object and the funtionaliy https://nodejs.org/api/process.html
+
 process.stdout.write("My Name is Murshid \n");  // this is the standard output Object of the Terminal
 process.stdout.write("Murshid \n \nlest \n");    // this won't give us a new line charactor   
 process.stdout.write("=====================");
