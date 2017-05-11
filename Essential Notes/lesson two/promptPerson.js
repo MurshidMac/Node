@@ -18,7 +18,7 @@ rl.question("What is your name? ",function (anwser){
 
     rl.on('line',function (saying){
         JSObjectPerson.charactors.push(saying.trim());                             // we need to push the values to the arrays                                                                                    
-        if(saying.toLowerCase.trim()==='exit'){
+        if(saying.toLowerCase().trim()==='exit'){                                  // this where i stopped last
             rl.close();                             // we are stopping it here from continouing on
         }else {
             rl.setPrompt(`What else do you like ${JSObjectPerson.name} ? ('exit') to leave`);
