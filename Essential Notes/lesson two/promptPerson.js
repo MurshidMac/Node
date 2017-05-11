@@ -15,6 +15,12 @@ rl.question("What is your name? ",function (anwser){
     rl.prompt();                                                            // this will prompt for user input
 
     rl.on('line',function (saying){
+        if(saying.toLowerCase.trim()==='exit'){
+            rl.close();                             // we are stopping it here from continouing on
+        }else {
+            rl.setPrompt(`What else do you like ${JSObjectPerson.name} ? ('exit') to leave`);
+            rl.prompt();
+        }
         console.log(saying.trim());
     });                                                          // this takes a new line function            
 
