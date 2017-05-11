@@ -1,5 +1,7 @@
 // we will be considering some wrapper like readline()
 // its best to see the doc https://nodejs.org/api/readline.html
+// Use of %s and %j for are really important check for the DOC
+
 var read= require('readline');              // this is to require the readline function in NodeJS
 var rl= read.createInterface(process.stdout, process.stdin);    // this is to maintain the listner Object with readline
 
@@ -15,6 +17,7 @@ rl.question("What is your name? ",function (anwser){
     rl.prompt();                                                            // this will prompt for user input
 
     rl.on('line',function (saying){
+        JSObjectPerson.charactors.push(saying.trim());                             // we need to push the values to the arrays                                                                                    
         if(saying.toLowerCase.trim()==='exit'){
             rl.close();                             // we are stopping it here from continouing on
         }else {
@@ -26,4 +29,8 @@ rl.question("What is your name? ",function (anwser){
 
 });                             // a question to be asked
 //console.log(read);            // this is just to check the functions related to the readline Module
-
+rl.close('close', function () {
+    //rl.prompt(`${JSObjectPerson.name} with saying ${charactors}`)
+    console.log("%s is a real person that says %j",JSObjectPerson.name, JSObjectPerson.charactors);                 //%s stands for a string to be prompted
+    process.exit();                                                                                                 // %j replaces the next value with a json                
+});
