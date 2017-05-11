@@ -11,7 +11,13 @@ var JSObjectPerson={
 rl.question("What is your name? ",function (anwser){
     JSObjectPerson.name=anwser;                                             // I am setting the name of the function
     rl.setPrompt(`What would be ${JSObjectPerson.name} say`);               // template String    
-    console.log(anwser);
+    //console.log(anwser);
+    rl.prompt();                                                            // this will prompt for user input
+
+    rl.on('line',function (saying){
+        console.log(saying.trim());
+    });                                                          // this takes a new line function            
+
 });                             // a question to be asked
 //console.log(read);            // this is just to check the functions related to the readline Module
 
