@@ -7,6 +7,8 @@ var event = require('events');              // event Module being called as an o
 var emitter = new event.EventEmitter();     // Event Emitter is a Constructor and it needs to be called as an object
                                             // Instance of the event Emitter is created above
 
+var name= "murshidhassen";
+var statusCode= 200;
 // this is an emitter event     
 // this is an asynchronous callback function
 emitter.on('customEvent', function (message, status){
@@ -16,3 +18,13 @@ emitter.on('customEvent', function (message, status){
 // here I am calling back the emitter event in here
 emitter.emit('customEvent', "Murshid Hassen", 200);                     // this will fire up our custom event 
 
+// Lets Modifiy the Emit function further
+// here what we should understand is that the modified emit() funtion will always emits for the parameters passed 
+// wether its a function or not it will be emitting the same
+/*
+emitter.emit('customEvent', function (){
+    return name;
+}, function (){
+    return statusCode;
+});
+*/
