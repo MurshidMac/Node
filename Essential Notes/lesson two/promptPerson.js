@@ -35,3 +35,6 @@ rl.on('close', function () {
     console.log("%s is a real person that says %j",JSObjectPerson.name, JSObjectPerson.charactors);                 //%s stands for a string to be prompted
     process.exit();                                                                                                 // %j replaces the next value with a json                
 });
+// json string
+// readline is handy tool to use without requiring the process stdout and process stdin
+// this can be a great tool to ask questions as well
