@@ -12,16 +12,17 @@ var JSObjectPerson={
 
 rl.question("What is your name? ",function (anwser){
     JSObjectPerson.name=anwser;                                             // I am setting the name of the function
-    rl.setPrompt(`What would be ${JSObjectPerson.name} say`);               // template String    
+    rl.setPrompt(`What would be ${JSObjectPerson.name} say ?`);               // template String    
     //console.log(anwser);
     rl.prompt();                                                            // this will prompt for user input
 
     rl.on('line',function (saying){
         JSObjectPerson.charactors.push(saying.trim());                             // we need to push the values to the arrays                                                                                    
-        if(saying.toLowerCase().trim()==='exit'){                                  // this where i stopped last
+        
+        if(saying.toLowerCase().trim()=== 'exit' ){                                  // this where i stopped last
             rl.close();                             // we are stopping it here from continouing on
         }else {
-            rl.setPrompt(`What else do you like ${JSObjectPerson.name} ? ('exit') to leave`);
+            rl.setPrompt(`What else  ${JSObjectPerson.name} say ? ('exit') to leave`);
             rl.prompt();
         }
         console.log(saying.trim());
@@ -29,7 +30,7 @@ rl.question("What is your name? ",function (anwser){
 
 });                             // a question to be asked
 //console.log(read);            // this is just to check the functions related to the readline Module
-rl.close('close', function () {
+rl.on('close', function () {
     //rl.prompt(`${JSObjectPerson.name} with saying ${charactors}`)
     console.log("%s is a real person that says %j",JSObjectPerson.name, JSObjectPerson.charactors);                 //%s stands for a string to be prompted
     process.exit();                                                                                                 // %j replaces the next value with a json                
