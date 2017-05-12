@@ -28,3 +28,8 @@ emitter.emit('customEvent', function (){
     return statusCode;
 });
 */
+// Lets further see some inheritance of feature with the emitter Constructor
+// SO to do some pure building of the products
+var EventEmitter= require('events').EventEmitter;   // we are calling the event constructor straigt from the EventEmitter class
+  
+
