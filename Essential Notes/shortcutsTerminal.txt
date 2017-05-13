@@ -6,4 +6,9 @@ First to Open a Directory
         $ xdg-open .            // this should also work fine with the gui    
         $ open .                // in Mac
         $ explorer .            // this is windows
-    
+To Open a site from the terminal 
+    We need a webbrowser of choice
+        either it can be firefox or Chrome
+            $ firefox http://www.google.com // this should fireup firefox
+            $ chrome http://www.google.com  // this should fireup the chrome
+
