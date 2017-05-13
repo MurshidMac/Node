@@ -1,0 +1,9 @@
+So WE need some basic terminal commands
+First to Open a Directory
+    So In Ubuntu basically to do so we need to get it from the nautilis
+        $ nautilis .            //this is Ubuntu or debian
+        $ gnome-open .          // this should also work
+        $ xdg-open .            // this should also work fine with the gui    
+        $ open .                // in Mac
+        $ explorer .            // this is windows
+    

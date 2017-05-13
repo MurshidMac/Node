@@ -1,3 +1,4 @@
 The design pattern used in the NodeJS event emitter.
 	this is a pretty handy design pattern (pubsub design pattern)
 There is another pattern called reactor pattern in programming 
+There is a common JS module pattern in the NodeJS

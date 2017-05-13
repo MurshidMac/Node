@@ -3,6 +3,7 @@
 // One More Important this is that EventEmitter Uses a the Design Pattern Pub/Sub 
 // Pub Sub Means Publish and Subscribe Design Pattern Which used In Message Oriented Middlewares
 // Description Uses Util.inherits() for inheritance purposes
+// Use of common js module pattern is also there
 
 var event = require('events');              // event Module being called as an object
 var emitter = new event.EventEmitter();     // Event Emitter is a Constructor and it needs to be called as an object
