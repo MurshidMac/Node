@@ -40,4 +40,10 @@ var Person= function (name){
 }
 util.inherits(Person, EventEmitter);                // Prototype function that implements Inheritance
 
+var murshidhassen= new Person("Murshid Hassen");      // I am creating an object of the person 
+murshidhassen.on('speak', function (said){            // This is a custom event for ben
+    console.log(`${this.name} said ${said}`);                                  
+});
+
+murshidhassen.emit('speak', "HI This is Murshid Implementing Node");    // this is a emit
 
