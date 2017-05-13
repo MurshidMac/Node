@@ -44,6 +44,6 @@ var murshidhassen= new Person("Murshid Hassen");      // I am creating an object
 murshidhassen.on('speak', function (said){            // This is a custom event for ben
     console.log(`${this.name} said ${said}`);                                  
 });
-
+// this is asynchronous call back function and the tool 
 murshidhassen.emit('speak', "HI This is Murshid Implementing Node");    // this is a emit
 
