@@ -29,21 +29,20 @@ emitter.emit('customEvent', function (){
     return statusCode;
 });
 */
-// Lets further see some inheritance of feature with the emitter Constructor
-// SO to do some pure building of the products
-var EventEmitter= require('events').EventEmitter;   // we are calling the event constructor straigt from the EventEmitter class
-var util = require('util');                         // this is for inheritance purpose
-// here comes an handy feature to code
-// Person Object 
-var Person= function (name){
-    this.name=name;
-}
-util.inherits(Person, EventEmitter);                // Prototype function that implements Inheritance
+var Person= require("./lib/personmodule");
 
+// this is one person object from the constructor Person
 var murshidhassen= new Person("Murshid Hassen");      // I am creating an object of the person 
 murshidhassen.on('speak', function (said){            // This is a custom event for ben
     console.log(`${this.name} said ${said}`);                                  
 });
 // this is asynchronous call back function and the tool 
 murshidhassen.emit('speak', "HI This is Murshid Implementing Node");    // this is a emit
+
+// there can be some one else as well
+var musthaque= new Person("Musthaq");
+musthaque.on('speak', function (saids){
+    console.log(`My brother is ${this.name} and he says ${saids}`);
+});
+musthaque.emit('speak', "I have two brother and a sister");
 

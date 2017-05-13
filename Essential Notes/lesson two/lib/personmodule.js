@@ -12,4 +12,4 @@ util.inherits(Person, EventEmitter);                // Prototype function that i
 
 // here comes the handy part to export to the world
 // Otherwise this stays as a local file
-module.exports= personmodule;
+module.exports= Person;
