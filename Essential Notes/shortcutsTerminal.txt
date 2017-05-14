@@ -12,3 +12,6 @@ To Open a site from the terminal
             $ firefox http://www.google.com // this should fireup firefox
             $ chrome http://www.google.com  // this should fireup the chrome
 
+To Open Up a new session of the terminal from the terminal
+    $ gnome-terminal
+    // this should return you another session of the terminal
