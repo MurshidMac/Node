@@ -8,9 +8,12 @@ exec("firefox https://www.google.com");         // this will execute the line wi
 exec("gnome-terminal");                         // this for instatiating an terminal session
 exec("nautilus");                              // this execute a session of the nautilius-explorer option
 exec("dir");
-/*
-exec("ls", function (err, ) {
 
+// we recive a ls call from the terminal
+exec("gnome-terminal ls", function (err,stdout ) {
+    if(err){
+        throw err;
+    }
 });                                                // this can be a mean to hack any system in which node is installed
-  */                                                  // if there any execute errors in the argument it will be the first argument                                              
+                                                    // if there any execute errors in the argument it will be the first argument                                              
 
