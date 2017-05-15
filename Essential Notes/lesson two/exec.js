@@ -7,5 +7,10 @@ var exec = require('child_process').exec;       // requiring function for the fi
 exec("firefox https://www.google.com");         // this will execute the line with default browser
 exec("gnome-terminal");                         // this for instatiating an terminal session
 exec("nautilus");                              // this execute a session of the nautilius-explorer option
-                                                // this can be a mean to hack any system in which node is installed
+exec("dir");
+/*
+exec("ls", function (err, ) {
+
+});                                                // this can be a mean to hack any system in which node is installed
+  */                                                  // if there any execute errors in the argument it will be the first argument                                              
 
