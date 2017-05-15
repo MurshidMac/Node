@@ -10,7 +10,7 @@ exec("nautilus");                              // this execute a session of the 
 exec("dir");
 
 // we recive a ls call from the terminal
-exec("gnome-terminal ls", function (err,stdout ) {
+exec("ls", function (err,stdout ) {
     if(err){
         throw err;
     }
