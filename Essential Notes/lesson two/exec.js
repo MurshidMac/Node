@@ -17,5 +17,11 @@ exec("ls", function (err,stdout ) {
     console.log("Listing Finished ");
     console.log(stdout);
 });                                                // this can be a mean to hack any system in which node is installed
-                                                    // if there any execute errors in the argument it will be the first argument                                              
-
+                                                   // if there any execute errors in the argument it will be the first argument                                              
+exec("git -v", function (err, stdout){
+    if(err){
+        throw err;
+    }
+    console.log("git version");
+    console.log(stdout);
+});                                     // this execution is for git
