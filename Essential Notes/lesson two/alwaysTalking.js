@@ -7,8 +7,8 @@ var sayings= [
   "This is otherwise known as the NBA playoffs. Since I’m a Toronto Raptors fan, you could also call it self-induced torture"
 ]
 
-var interval=setInterval(function (){
-    var i= Math.floor(Math.random*sayings.length);   
+var interval = setInterval(function (){
+    var i= Math.floor(Math.random()*sayings.length);   
     process.stdout.write(`${sayings[i]}\n`);
 },1000);
 
