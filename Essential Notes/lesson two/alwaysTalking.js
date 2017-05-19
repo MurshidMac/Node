@@ -17,3 +17,5 @@ process.stdin.on('data', function(data){
     clearInterval(interval);
     process.exit();
 })
+// spawn is for continous funtional 
+// but execute is for one time call 
