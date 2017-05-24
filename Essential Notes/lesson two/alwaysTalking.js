@@ -16,6 +16,8 @@ process.stdin.on('data', function(data){
     console.log(`STDIN Data Recieced -> ${data.toString().trim()}`);
     clearInterval(interval);
     process.exit();
-})
+});
+
+// spawn
 // spawn is for continous funtional 
 // but execute is for one time call 
