@@ -10,9 +10,9 @@ console.log(read);
 //console.log(readwithoutSync);
 
 // this is asychronous nature
-fs.readdir('./lib', function(err, files){
+fs.readdir("./lib/sayings.md","UTF-8", function(err, files){
     if (err){
-        throw err
+        console.log(err);
     }
     console.log(read);
 });
