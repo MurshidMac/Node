@@ -7,6 +7,7 @@ var path= require("path");
 //console.log(contenstWithoutTextEncoding);
 // here what we do is we use several file system to combine many file system to read all from the directory
 // function readdir is to read the directory and the currently to load the path
+// fs module is used to read file in the directory and to get all contents loaded to the nodejs
 fs.readdir("./lib", function (err, files){
     files.forEach(function (fileName){
         var file= path.join(__dirname, "lib", fileName);    // this creates a fullpath to the current directory
