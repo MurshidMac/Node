@@ -14,6 +14,13 @@ hi
 
 
 `;
+// Aynschronous funtion
+// md file system
+fs.writeFile("sample.md", md.trim(),  function(err){
+    console.log("file Created");
+});
+
+
 
 
 
