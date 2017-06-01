@@ -13,7 +13,7 @@ var JSObjectPerson={
 rl.question("What is your name? ",function (anwser){
     JSObjectPerson.name=anwser;
     
-    fs.writeFileSync()
+    fs.writeFileSync(JSObjectPerson.name+".md", `${JSObjectPerson.name}\n=========================\n\n`)
     
                                                  // I am setting the name of the function
     rl.setPrompt(`What would be ${JSObjectPerson.name} say ?`);               // template String    
