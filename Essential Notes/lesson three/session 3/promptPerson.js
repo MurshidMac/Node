@@ -23,6 +23,7 @@ rl.question("What is your name? ",function (anwser){
     rl.on('line',function (saying){
         JSObjectPerson.charactors.push(saying.trim());                             // we need to push the values to the arrays                                                                                    
         
+        fs.appendFile(JSObjectPerson.name+".md",`* ${saying.trim()}\n`);
         if(saying.toLowerCase().trim()=== 'exit' ){                                  // this where i stopped last
             rl.close();                             // we are stopping it here from continouing on
         }else {
