@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-if (fs.exists("lib")) {
+if (fs.existsSync("lib")) {
     console.log("Directory Already there");
 } else {
 
