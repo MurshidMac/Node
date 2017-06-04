@@ -5,7 +5,7 @@ fs.renameSync("./lib/project-config.js","./lib/project-config.json");
 
 console.log("Configure.json file is renamed");
 
-fs.rename("./lib/notes.md","./notes.md", function (err) {
+fs.renameSync("./lib/notes.md","./notes.md", function (err) {
     if(err){
         console.log(err);
     }else{
