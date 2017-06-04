@@ -8,6 +8,16 @@ try{
 }catch(err){
     console.log(err);
 }
+// this is the async version
+fs.unlink("./unlinkAsync.json", function (err){
+    if(err){
+        console.log(err);
+    }else{
+        console.log("File removed Successfully")
+    }
+});
+
+
 
 
 
