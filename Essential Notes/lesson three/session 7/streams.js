@@ -1,5 +1,7 @@
 var fs= require('fs');  // fs module
 
+// this leads to memory allocaltion
+/*
 fs.readFile("./chat.log", "UTF-8", function(err, chatLogs){
     if(err){
         throw err
@@ -9,3 +11,16 @@ fs.readFile("./chat.log", "UTF-8", function(err, chatLogs){
     
 });
 console.log("Filese reading");
+*/
+// this is use a custom method in the file input stream
+
+var stream= fs.createReadStream("./chat.log", "UTF-8");
+
+var data="";
+
+
+
+
+
+
+
