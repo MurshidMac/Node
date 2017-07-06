@@ -17,6 +17,15 @@ console.log("Filese reading");
 var stream= fs.createReadStream("./chat.log", "UTF-8");
 
 var data="";
+// reading a data event is raised when data is passed
+
+stream.on("data", function(chunk){
+    process.stdout.write(`chunk: ${chunk.length}`)
+})
+
+
+
+
 
 
 
