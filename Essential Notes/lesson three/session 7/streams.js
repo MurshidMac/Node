@@ -36,7 +36,7 @@ stream.on("data", function(chunk){
 
 stream.on("end", function(){
     console.log("\n\n\n");
-    console.log("Ended Reading");
+    console.log("Ended Reading "+ `${data.length}`);
     console.log("\n\n\n");
 
 })
