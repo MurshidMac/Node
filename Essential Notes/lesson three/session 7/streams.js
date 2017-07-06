@@ -19,6 +19,14 @@ var stream= fs.createReadStream("./chat.log", "UTF-8");
 var data="";
 // reading a data event is raised when data is passed
 
+stream.once("data", function(){
+    console.log("\n\n\n");
+    console.log("Started Reading the file");
+    console.log("\n\n\n");
+    
+
+}); 
+
 stream.on("data", function(chunk){
     process.stdout.write(`chunk: ${chunk.length}`);
 
