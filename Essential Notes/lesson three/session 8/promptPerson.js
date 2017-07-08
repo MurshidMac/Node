@@ -22,9 +22,9 @@ rl.question("What is the name of a real person? ", function(answer) {
 
 	rl.on('line', function(saying) {
 
-		realPerson.sayings.push(saying.trim());
-		stream.write(`*${saying.trim()} \n}`);
-
+		//realPerson.sayings.push(saying.trim());
+		//stream.write(`*${saying.trim()} \n}`);
+		// this is added in to the else block
 
 		if (saying.toLowerCase().trim() === 'exit') {
 			stream.close();
